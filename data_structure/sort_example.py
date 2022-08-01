@@ -2,6 +2,9 @@ class Node:
     def __init__(self, val):
         self.val = val
 
+    def say_hello(self):
+        print("hello", self.val)
+
 if __name__ == "__main__":
     arr = [1, 5, 2, 0, 23]
     arr.sort()
@@ -18,4 +21,4 @@ if __name__ == "__main__":
     sorted_node = sorted(arr4, key=lambda x: x.val) # Sort with key
     print("descending", descending_list)
     for x in sorted_node:
-        print(x.val)
+        x.say_hello()
